@@ -1,5 +1,8 @@
 {
   "expo": {
+    "plugins": [
+      "expo-notifications"
+    ],
     "name": "react-native-meteo2",
     "slug": "react-native-meteo2",
     "version": "1.0.0",
@@ -10,15 +13,22 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.kelly.reactnativemeteo",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "softwareKeyboardLayoutMode": "pan"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "53edf7ed-2af6-454d-914e-77d7ed58d261"
+      }
     }
   }
 }
